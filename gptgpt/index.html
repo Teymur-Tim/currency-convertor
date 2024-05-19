@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="main-div">
+      <nav>
+        <div class="logoDiv"><img src="imgs/Asset 1@3x 1.svg" alt="" /></div>
+        <ul>
+          <li>БАНК</li>
+          <li>БИЗНЕС</li>
+          <li>ИНВЕСТИЦИИ</li>
+          <li>СТРАХОВАНИЕ</li>
+          <li>МОБАЙЛ</li>
+          <li>ПУТЕШЕСТВИЯ</li>
+          <li>РАЗВЛЕЧЕНИЯ</li>
+        </ul>
+        <button class="navButton">Войти</button>
+      </nav>
+      <div class="convertorDiv">
+        <h1>Конвертер валют онлайн</h1>
+        <div class="convertor">
+          <div class="iHave">
+            <h6>У меня есть</h6>
+            <div class="fusion" id="from-currency-buttons">
+              <button class="merged-button" data-currency="RUB">RUB</button>
+              <button class="merged-button" data-currency="USD">USD</button>
+              <button class="merged-button" data-currency="EUR">EUR</button>
+              <button class="merged-button" data-currency="GBP">GBP</button>
+            </div>
+            <div class="input-container">
+              <input type="text" id="amount" placeholder="0" />
+              <div class="rate" id="from-rate"></div>
+            </div>
+          </div>
+          <div class="wGet">
+            <h6>Хочу приобрести</h6>
+            <div class="fusion" id="to-currency-buttons">
+              <button class="merged-button" data-currency="RUB">RUB</button>
+              <button class="merged-button" data-currency="USD">USD</button>
+              <button class="merged-button" data-currency="EUR">EUR</button>
+              <button class="merged-button" data-currency="GBP">GBP</button>
+            </div>
+            <div class="input-container">
+              <input
+                type="text"
+                id="converted-amount"
+                placeholder="0"
+                readonly
+              />
+              <div class="rate" id="to-rate"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="status"
+          style="color: red; text-align: center; margin-top: 20px"
+        ></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

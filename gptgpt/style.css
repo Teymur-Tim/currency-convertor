@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+.main-div {
+  width: 100%;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f5f6;
+  height: 50px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.logoDiv {
+  align-items: center;
+}
+
+.navButton {
+  background-color: white;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navButton:hover {
+  background-color: #e0e0e0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  margin: 25px;
+  color: #959ba4;
+}
+
+li:nth-child(1) {
+  color: black;
+}
+
+.convertorDiv {
+  width: 100%;
+  max-width: 641px;
+  margin: 100px auto 30px;
+  text-align: left;
+}
+
+h1 {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+h6 {
+  color: #9f9f9f;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.convertor {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.iHave,
+.wGet {
+  max-width: 250px;
+  width: 100%;
+}
+
+.merged-button {
+  border: 1px solid #9f9f9f;
+  font-size: 12px;
+  cursor: pointer;
+  background-color: white;
+  color: #9f9f9f;
+  width: 60px;
+  border-radius: 0;
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.merged-button:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.merged-button:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.merged-button.active {
+  background-color: rebeccapurple;
+  color: white;
+}
+
+.merged-button:hover {
+  background-color: #ccc;
+}
+
+.fusion {
+  display: flex;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  position: relative;
+  height: 100px;
+}
+
+input {
+  width: calc(100% - 10px);
+  padding: 10px;
+  padding-bottom: 50px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 100%;
+  font-size: 36px;
+  text-align: left;
+  font-weight: bold;
+  transition: border-color 0.3s ease;
+  outline: none;
+}
+
+input:hover {
+  border-color: #666;
+}
+
+.rate {
+  font-size: 12px;
+  color: #666;
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+}
